@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    height: 60px;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.header .logo{
+    font-size: 25px;
+    font-weight: 600;
+}
+.header .logo span{
+    color: darkorange;
+}
+.header .nav{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+.header .nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+.header .icone{
+    display: flex;
+    gap: 2vw;
+    
+}
+.header .icone i{
+    height: 25px;
+    width: 25px;
+    /* background-color: rgb(216, 224, 230); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.nav1{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-top: -25px;
+    visibility: hidden;
+    
+}
+.nav1 a{
+    text-decoration: none;
+    color: black;
+    font-weight:550 ;
+}
+.hero-section{
+    height: 500px;
+    max-width: 1600px;
+    background-color: rgb(223, 242, 242);
+    display: flex;
+   
+}
+.hero-section .left{
+    height: 500px;
+   max-width: 600px;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+gap: 10px;
+
+}
+.hero-section .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.hero-section .right .image{
+    height: 100%;
+    width: 50%;
+    background-image: url(rajan.png);
+    background-size: cover;
+    filter: drop-shadow(5px 5px 5px  red);
+    margin-bottom: 30px;
+    margin-left: 300px;
+}
+.hero-section .left .name{
+font-size: 10px;
+font-weight: 600;
+color: rgb(90, 90, 88);
+}
+.hero-section .left .about{
+    font-size: 50px;
+    font-weight: 700;
+}
+.hero-section .left button{
+    height: 40px;
+    width: 100px;
+    margin-right: 30px;
+    margin-top: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    transition: 1s;
+}
+.left button:hover{
+    transform: translateX(5px);
+}
+.hero-section1{
+    height: 300px;
+    width: 95vw;
+    background-color: coral;
+    margin-top: 20px;
+    display: flex;
+    margin: 20px;
+border-radius: 5px;
+
+}
+.hero-section1 .content{
+    height: 300px;
+    width: 400px;
+
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.hero-section1 .image2{
+    height: 300px;
+    width: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image2 .imag{
+    height: 300px;
+    width: 250px;
+    background-image: url(iphone.png);
+    background-size: cover;
+}
+.hero-section1 .content .name1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.hero-section1 .content .about1{
+   color: rgb(65, 59, 59);
+}
+.hero-section1 .content button{
+   height: 30px;
+   width: 100px;
+   background: none;
+   color: black;
+   border: none;
+   border-radius: 20px;
+   background-color: rgb(251, 251, 254);
+   transition: 1s;
+}
+.content button:hover{
+    transform: translateY(-5px);
+}
+.hero-section2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+   
+}
+.hero-section2 h1{
+    text-align: center;
+   
+}
+.hero-section2 .products{
+    height: 250px;
+    width: 100vw;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hero-section2 .products .product1{
+    height: 230px;
+    width: 200px;
+    /* background-color: burlywood; */
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+
+}
+.hero-section2 .products .product1 .discount{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: rgb(238, 229, 229);
+    margin-left: -150px;
+}
+.hero-section2 .products .product1 .p-image{
+    height: 100px;
+    width: 60%;
+   background-image: url(laptop.webp);
+   background-size: cover;
+margin-top: -20px;
+    display: flex;
+   margin-left: 15px;
+   border-radius: 5px;
+}
+.hero-section2 .products .product1 .p-name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+.hero-section2 .products .product1 .buy{
+    height: 30px;
+    width: 90%;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+.buy:hover{
+    transform: scale(1.07);
+}
+.logo{
+    display: flex;
+}
+.logo .logo1{
+    height: 100px;
+    width: 70px;
+    background-image: url(logo1.png);
+    background-size: cover;
+    margin-top: -60px;
+    margin-right: -15px;
+}
+
+@media (max-width:500px) {
+    .header{
+        height: 120px;
+        box-shadow: none;
+        
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    .header .logo{
+       margin-right: -300px;
+    }
+    .header .nav{
+        visibility: hidden;
+    }
+    .header .icone{
+        gap: 20px;
+    }
+    .nav1{
+        visibility: visible;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        height: 400px;
+    }
+    .right{
+        width: 300px;
+    }
+   .left{
+    margin-top: -300px;
+   }
+   .image2{
+    margin-left: -750px;
+   }
+   .hero-section1{
+max-width: 600px;
+overflow-x: hidden;
+height: 250px;
+   }
+   .content .name1{
+    margin-left: -300px;
+   
+   }
+   .content .about1{
+    margin-left: -300px;
+   
+   }
+   .content button{
+    margin-left: -300px;
+   
+   }
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logo1"></div>
+            Mani<span>Rajan</span>
+        </div>
+        <div class="nav">
+            <a href="#home">Home</a> 
+            <a href="#shop">Shop</a>
+            <a href="#Products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="icone">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-brands fa-opencart"></i>
+        </div>
+    </div>
+        <div class="nav1">
+            <a href="#home">Home</a> 
+            <a href="#shop">Shop</a>
+            <a href="#Products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+    </div>
+    <div class="hero-section">
+        <div class="left">
+            <div class="name">WINTER COLLECTION OFFER 2025</div>
+            <div class="about">Get up to 50% off<br> Each Product</div>
+            <button>Shop Now</button>
+        </div>
+        <div class="right">
+            <div class="image"></div>
+        </div>
+    </div>
+    <div class="hero-section1">
+        <div class="content">
+            <div class="name1">Under Rs.140,000</div>
+            <div class="about1">Budget Friendly<br>Iphone 15 pro max</div>
+            <button>Explore Now</button>
+        </div>
+        <div class="image2">
+            <div class="imag"></div>
+        </div>
+    </div>
+    <div class="hero-section2">
+        <h1 id="products" >PRODUCTS</h1>
+        <div class="products">
+            <div class="product1">
+                <div class="discount">-20%</div>
+                <div class="p-image"></div>
+                <div class="p-name">Laptops</div>
+                    <div class="buy">Shop Now</div>
+            </div>
+            <div class="product1">
+                <div class="discount">-40%</div>
+                <div class="p-image" style="background-image: url(camera.webp);"></div>
+                <div class="p-name">Camera</div>
+                    <div class="buy">Shop Now</div>
+            </div>
+            <div class="product1">
+                <div class="discount">-18%</div>
+                <div class="p-image" style="background-image: url(tv.webp); width: 80%; height: 100px;"></div>
+                <div class="p-name">TV</div>
+                    <div class="buy">Shop Now</div>
+            </div>
+            <div class="product1">
+                <div class="discount">-27%</div>
+                <div class="p-image" style="background-image: url(shirt.webp); width: 40%;" ></div>
+                <div class="p-name">Shirts</div>
+                    <div class="buy">Shop Now</div>
+            </div>
+            <div class="product1">
+                <div class="discount">-46%</div>
+                <div class="p-image" style="background-image: url(jeans.webp); width: 40%;"></div>
+                <div class="p-name">Jeans</div>
+                    <div class="buy">Shop Now</div>
+            </div>
+            <div class="product1">
+                <div class="discount">-50%</div>
+                <div class="p-image"></div>
+                <div class="p-name" style="background-image: url(cap.webp);">Cap</div>
+                    <div class="buy">Shop Now</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
